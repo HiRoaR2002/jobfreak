@@ -1,0 +1,46 @@
+body {
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(217, 217, 231);
+}
+
+.main {
+  display: flex;
+  gap: 3rem;
+  margin: 10rem;
+  align-items: center;
+  justify-content: center;
+}
+.main .left-panel {
+  align-items: center;
+  justify-content: center;
+  margin: 5rem;
+  padding: 5rem;
+  margin: auto;
+  padding: auto;
+}
+
+.main .left-panel ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 0;
+}
+.main .left-panel ul li {
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.main .left-panel ul li:hover {
+  border: 1px rgb(195, 195, 251) solid;
+  background-color: rgb(164, 164, 223);
+  font-weight: bold;
+}
+.main .right-panel {
+  align-items: center;
+  justify-content: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin: auto;
+}

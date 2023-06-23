@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Job Freaks</title>
+</head>
+
+<body>
+  <div class="main">
+    <div class="left-panel">
+      <ul>
+        <li id="home" onclick=changeHandlerHome()>Home</li>
+        <li id="contact" onclick=changeHandlerContact()>Contact</li>
+        <li id="information" onclick=changeHandlerInfo()>Information</li>
+        <li id="guide" onclick=changeHandlerGuide()>Guide</li>
+      </ul>
+    </div>
+    <div class="right-panel" id="right-panel" onclick=bodyClick()>
+    </div>
+  </div>
+</body>
+<script>
+  const rightpanel = document.getElementById("right-panel");
+  const home = document.getElementById("home");
+  const contact = document.getElementById("contact");
+  const info = document.getElementById("information");
+  const guide = document.getElementById("guide");
+  function changeHandlerHome() {
+    rightpanel.innerHTML = "Home Info is HERE";
+    home.style.backgroundColor = 'black';
+    home.style.color = 'white';
+    contact.style.backgroundColor = 'transparent';
+    contact.style.color = 'black';
+    info.style.backgroundColor = 'transparent';
+    info.style.color = 'black';
+    guide.style.backgroundColor = 'transparent';
+    guide.style.color = 'black';
+  }
+  function changeHandlerContact() {
+    rightpanel.innerHTML = "Contact Info is HERE";
+    contact.style.backgroundColor = 'black';
+    contact.style.color = 'white';
+    home.style.backgroundColor = 'transparent';
+    home.style.color = 'black';
+    info.style.backgroundColor = 'transparent';
+    info.style.color = 'black';
+    guide.style.backgroundColor = 'transparent';
+    guide.style.color = 'black';
+  }
+  function changeHandlerInfo() {
+    rightpanel.innerHTML = "Whole Information is HERE";
+    info.style.backgroundColor = 'black';
+    info.style.color = 'white';
+    home.style.backgroundColor = 'transparent';
+    home.style.color = 'black';
+    guide.style.backgroundColor = 'transparent';
+    guide.style.color = 'black';
+    contact.style.backgroundColor = 'transparent';
+    contact.style.color = 'black';
+  }
+  function changeHandlerGuide() {
+    rightpanel.innerHTML = "Guide is HERE";
+    guide.style.backgroundColor = 'black';
+    guide.style.color = 'white';
+    contact.style.backgroundColor = 'transparent';
+    contact.style.color = 'black';
+    home.style.backgroundColor = 'transparent';
+    home.style.color = 'black';
+    info.style.backgroundColor = 'transparent';
+    info.style.color = 'black';
+  }
+  function bodyClick() {
+    contact.style.backgroundColor = 'transparent';
+    contact.style.color = 'black';
+    home.style.backgroundColor = 'transparent';
+    home.style.color = 'black';
+    info.style.backgroundColor = 'transparent';
+    info.style.color = 'black';
+    guide.style.backgroundColor = 'transparent';
+    guide.style.color = 'black';
+  }
+</script>
+
+</html>
